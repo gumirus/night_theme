@@ -1,13 +1,8 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #a4e6dd;
   background-image: url("../theme/sun.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: #333;
 }
-
-/* body .picture {
-  border-color: #ccc;
-  filter: brightness(100%);
-} */

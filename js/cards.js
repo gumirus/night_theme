@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const dog = "../img/1.jpeg";
-  const cat = "../img/2.jpeg";
-  const hamster = "../img/3.jpeg";
-  const fish = "../img/4.jpeg";
-  const bird = "../img/5.jpeg";
-  const leopard = "../img/6.jpeg";
+  const dog = "./img/1.jpeg";
+  const cat = "./img/2.jpeg";
+  const hamster = "./img/3.jpeg";
+  const fish = "./img/4.jpeg";
+  const bird = "./img/5.jpeg";
+  const leopard = "./img/6.jpeg";
 
   function createImage(src, alt) {
     const img = document.createElement("img");

@@ -8,15 +8,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/night-theme.css" />
     <link rel="stylesheet" href="css/moon-container.css" />
-    <script defer src="js/night-theme.js"></script>
   </head>
   <body>
-    <script>
-      const theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.classList.add(theme);
-      }
-    </script>
     <div class="container">
       <h1>Ночная тема</h1>
       <p>
@@ -55,7 +48,11 @@
         alt="Облако"
         class="cloud front-cloud"
       />
-      <img src="/theme/2_oblako_zad.png" alt="Облако" class="cloud back-cloud" />
+      <img
+        src="/theme/2_oblako_zad.png"
+        alt="Облако"
+        class="cloud back-cloud"
+      />
     </div>
     <button class="night-theme-btn" id="night-theme-btn">
       <svg
@@ -142,5 +139,12 @@
         />
       </svg>
     </button>
+    <script>
+      const theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.classList.add(theme);
+      }
+    </script>
+    <script defer src="js/night-theme.js"></script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+/* Стили для контейнера луны */
+.moon-container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin: 50px auto;
+}
+
+/* Стили для луны */
+.moon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #f0e68c;
+  /* Цвет луны */
+  border-radius: 50%;
+  animation: rotateMoon 5s linear infinite;
+  /* Анимация вращения луны */
+}
+
+/* Анимация вращения луны */
+@keyframes rotateMoon {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

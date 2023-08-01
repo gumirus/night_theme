@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const heading = document.getElementById("theme-heading");
   const paragraph = document.getElementById("paragraph");
   const theme = localStorage.getItem("theme");
-  const dog = "img/dog.jpeg";
+  const dog = "img/dog.png";
   const cat = "/img/cat.jpeg";
   const hamster = "img/hamster.jpeg";
   const fish = "img/fish.jpeg";
-  const bird = "../img/bird.jpeg";
+  const bird = "../img/bird.png";
   const leopard = "img/leopard.jpeg";
 
   if (theme === "night-theme") {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
     }
   });
-    
+
   function createImage(src, alt) {
     const img = document.createElement("img");
     img.src = src;

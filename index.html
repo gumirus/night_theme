@@ -5,14 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ночная тема</title>
-
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/night-theme.css" />
-
     <script defer src="js/night-theme.js"></script>
   </head>
-
   <body>
     <script>
       const theme = localStorage.getItem("theme");
@@ -20,7 +16,6 @@
         document.body.classList.add(theme);
       }
     </script>
-
     <div class="container">
       <h1>Ночная тема</h1>
       <p>
@@ -58,7 +53,6 @@
         <img class="picture" src="img/6.jpeg" alt="Изображение 6" />
       </div>
     </div>
-
     <button class="night-theme-btn" id="night-theme-btn">
       <svg
         class="night-theme-btn__icon night-theme-btn__icon_sun"

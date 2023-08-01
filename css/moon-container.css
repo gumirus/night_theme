@@ -16,7 +16,7 @@
   background-color: #f0e68c;
   /* Цвет луны */
   border-radius: 50%;
-  animation: rotateMoon 5s linear infinite;
+  animation: rotateMoon 60s linear infinite;
   /* Анимация вращения луны */
 }
 

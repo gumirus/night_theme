@@ -15,6 +15,16 @@ a {
 
 img {
     max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
 }
 
 .container {
@@ -34,3 +44,36 @@ img {
     object-fit: cover;
     border: 5px solid gray;
 }
+
+  @media (max-width: 480px) {
+    body {
+        background-color: #1f1d1d;
+        color: #0c76ef;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+ body {
+        background-color: #1f1d1d;
+        color: #0c76ef;
+    }
+}
+
+@media (min-width: 769px) {
+ body {
+        background-color: #1f1d1d;
+        color: #0c76ef;
+    }
+}
+
+ @media screen and (max-width: 25em) {
+    .images-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-container img {
+        width: 90%;
+        margin: 2%;
+    }
+} 

@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ночная тема</title>
+    <title>Ночная тема и дневная тема</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/night-theme.css" />
     <link rel="stylesheet" href="css/moon-container.css" />
     <link rel="stylesheet" href="css/light-theme.css" />
+    <script src="js/night-theme.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <h1 id="theme-heading">Дневная тема</h1>
-      <p id="theme-paragraph">
-        Дневная тема - это прекрасное время солнца и света.
-      </p>
-      
+      <h1 id="theme-heading"></h1>
+      <p id="paragraph"></p>
       <div class="gallery">
         <img class="picture" src="img/1.jpeg" alt="Изображение 1" />
         <img class="picture" src="img/2.jpeg" alt="Изображение 2" />
@@ -126,12 +124,5 @@
         />
       </svg>
     </button>
-    <script>
-      const theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.classList.add(theme);
-      }
-    </script>
-    <script defer src="js/night-theme.js"></script>
   </body>
 </html>

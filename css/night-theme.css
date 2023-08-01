@@ -46,6 +46,7 @@ body {
 }
 
 body.night-theme {
+    background-color: black;
     background-image: url('/theme/1_fon.png');
     /* background-size: cover; */
     background-position: center center;

@@ -48,7 +48,7 @@ body {
 body.night-theme {
     background-color: rgb(62, 58, 58);
     background-image: url('../theme/1_fon.png');
-    /* background-size: cover; */
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     color: rgb(255, 234, 3);

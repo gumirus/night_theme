@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const heading = document.getElementById("theme-heading");
   const paragraph = document.getElementById("paragraph");
   const theme = localStorage.getItem("theme");
-  const dog = "../img/dog.jpeg";
-  const cat = "../img/cat.jpeg";
-  const hamster = "../img/hamster.jpeg";
-  const fish = "../img/fish.jpeg";
+  const dog = "img/dog.jpeg";
+  const cat = "/img/cat.jpeg";
+  const hamster = "img/hamster.jpeg";
+  const fish = "img/fish.jpeg";
   const bird = "../img/bird.jpeg";
-  const leopard = "../img/leopard.jpeg";
+  const leopard = "img/leopard.jpeg";
 
   if (theme === "night-theme") {
     document.body.classList.add("night-theme");

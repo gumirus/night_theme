@@ -33,17 +33,17 @@ img:hover {
     margin: 0 auto;
 }
 
-.gallery {
+.cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-}
+} 
 
-.picture {
+/* .picture {
     height: 300px;
     object-fit: cover;
     border: 5px solid gray;
-}
+} */
 
   @media (max-width: 480px) {
     body {

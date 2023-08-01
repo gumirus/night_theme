@@ -1,1 +1,1 @@
-- # [Ночная тема](https://gumirus.github.io/night_theme/)
+- # [Ночная и дневная тема](https://gumirus.github.io/night_theme/)

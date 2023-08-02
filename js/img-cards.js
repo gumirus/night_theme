@@ -5,9 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const fish = "img/fish.jpeg";
   const bird = "img/bird.png";
   const leopard = "img/leopard.jpeg";
-  // const luna = "theme/3_luna.png";
-  // const clouds = "theme/4_oblako_pered.png";
-  // const clouds2 = "theme/2_oblako_zad.png";
+  const luna = "theme/3_luna.png";
+  const clouds = "theme/4_oblako_pered.png";
+  const korova = "img/korova.png"
+  const kosmonavt = "img/kosmonavt.png"
+  const sun = "img/sun.png"
+  const tarelka = "img/tarelka.png"
+  const zemlya = "img/zemlya.png"
+  const solnce = "theme/solnce.png"
 
   function Cards() {
     const container = document.getElementById("cards-container");
@@ -18,9 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
     container.appendChild(createImage(fish, "fish"));
     container.appendChild(createImage(bird, "bird"));
     container.appendChild(createImage(leopard, "leopard"));
-    // container.appendChild(createImage(luna, "luna"));
-    // container.appendChild(createImage(clouds, "clouds"));
-    // container.appendChild(createImage(clouds2, "clouds2"));
+    container.appendChild(createImage(luna, "luna"));
+    container.appendChild(createImage(clouds, "clouds"));
+    container.appendChild(createImage(kosmonavt, "kosmonavt"));
+    container.appendChild(createImage(sun, "sun"));
+    container.appendChild(createImage(tarelka, "zemlya"));
+    container.appendChild(createImage(zemlya, "zvezdi"));
+    container.appendChild(createImage(solnce, "solnce"));
+    container.appendChild(createImage(korova, "korova"));
   }
 
   // Call the function to create the cards

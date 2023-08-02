@@ -73,3 +73,30 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Media query for smartphones */
+@media only screen and (max-width: 768px) {
+
+  .moon,
+  .sun {
+    width: 150px;
+    /* Adjust the size for smaller screens (smartphones) */
+    height: 150px;
+    /* Adjust the size for smaller screens (smartphones) */
+  }
+
+  .moon-container {
+    max-width: 350px;
+    /* Adjust the maximum width for smaller screens (smartphones) */
+  }
+
+  .sun-container {
+    max-width: 450px;
+    /* Adjust the maximum width for smaller screens (smartphones) */
+  }
+
+  .moon-sun-container {
+    max-width: 300px;
+    /* Adjust the maximum width for smaller screens (smartphones) */
+  }
+}

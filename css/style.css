@@ -133,3 +133,28 @@ a {
     text-decoration: none;
     /* Remove underline from the link text */
 }
+
+/* Styling for the button */
+.night-theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Styling for the sun icon */
+.night-theme-btn__icon_sun {
+    fill: #231F20;
+    width: 24px;
+    height: 24px;
+}
+
+/* Styling for the moon icon */
+.night-theme-btn__icon_moon {
+    fill: #292D32;
+    width: 24px;
+    height: 24px;
+}

@@ -79,9 +79,9 @@
 
   .moon,
   .sun {
-    width: 150px;
+    width: 250px;
     /* Adjust the size for smaller screens (smartphones) */
-    height: 150px;
+    height: 250px;
     /* Adjust the size for smaller screens (smartphones) */
   }
 

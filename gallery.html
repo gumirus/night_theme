@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>галлерея</title>
+    <title>Галерея</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/night-theme.css" />
     <link rel="stylesheet" href="css/moon-container.css" />
@@ -16,13 +16,16 @@
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="gallery.html">Галлерея</a></li>
-        <li><a href="about.html">Обо мне</a></li>
+        <p>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="gallery.html">Галлерея</a></li>
+          <li><a href="about.html">Обо мне</a></li>
+        </p>
+        <li><a id="theme-heading"></a></li>
       </ul>
     </nav>
     <div class="container">
-      <h1>Image Gallery</h1>
+      <h1>Галерея</h1>
       <div class="cards-container">
         <div class="">
           <img src="./img/bird.png" alt="Птица" />
@@ -32,7 +35,7 @@
           <img src="./img/cat.jpeg" alt="Кот" />
           <h3>Кот</h3>
         </div>
-        <!-- Add more cards here -->
+        <div id="cards-container" class="cards-container"></div>
       </div>
     </div>
     <button class="night-theme-btn" id="night-theme-btn">

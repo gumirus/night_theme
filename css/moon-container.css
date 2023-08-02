@@ -1,8 +1,83 @@
 /* Стили для контейнера луны */
+/* .moon-container {
+  position: relative;
+  margin: 50px auto;
+} */
+
+/* Стили для луны */
+/* .moon {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotateMoon 60s linear infinite;
+} */
+
+/* Анимация вращения луны */
+/* @keyframes rotateMoon {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+} */
+
+/* Стили для солнца */
+/* .sun-container {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin: 50px auto;
+} */
+
+
+/* .sun {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotateMoon 60s linear infinite;
+} */
+
+/* Анимация вращения солнца */
+/* @keyframes rotateSun {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+} */
+
+/* .moon-sun-container {
+  position: relative;
+  width: 400px;
+  left: 50%;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon-container,
+.sun-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* Стили для контейнера луны */
+
 .moon-container {
   position: relative;
-  width: 450px;
-  height: 450px;
   margin: 50px auto;
 }
 
@@ -10,10 +85,8 @@
 .moon {
   position: absolute;
   top: 0;
-  left: 50%;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   animation: rotateMoon 60s linear infinite;
 }
 
@@ -31,29 +104,48 @@
 /* Стили для солнца */
 .sun-container {
   position: relative;
-  width: 550px;
-  height: 550px;
   margin: 50px auto;
+  width: 600px;
+  height: 600px;
 }
-
 
 .sun {
   position: absolute;
   top: 0;
-  left: 50%;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  animation: rotateMoon 60s linear infinite;
+  animation: rotateSun 60s linear infinite;
 }
 
 /* Анимация вращения солнца */
 @keyframes rotateSun {
   from {
-    transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg) scale(1.5);
   }
 
   to {
-    transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg) scale(1);
   }
+}
+
+.moon-sun-container {
+  position: relative;
+  width: 400px;
+  left: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon-container,
+.sun-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

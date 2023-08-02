@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   const moon = document.querySelector(".moon");
+  const sun = document.querySelector(".sun");
   const heading = document.getElementById("theme-heading");
   const paragraph = document.getElementById("paragraph");
   const theme = localStorage.getItem("theme");
 
   if (theme === "night-theme") {
     document.body.classList.add("night-theme");
-    moon.style.opacity = "1"; // Показываем луну при загрузке страницы с темной темой
+    moon.style.display = "block"; // Show the moon icon for night theme
+    sun.style.display = "none"; // Hide the sun icon for night theme
     heading.textContent = "Ночная тема";
     paragraph.textContent = `
       Ночная тема - это особенное явление, когда природа облачается в мягкие
@@ -24,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   } else {
     document.body.classList.remove("night-theme");
-    moon.style.opacity = "0"; // Скрываем луну при загрузке страницы со светлой темой
+    moon.style.display = "none"; // Hide the moon icon for day theme
+    sun.style.display = "block"; // Show the sun icon for day theme
     heading.textContent = "Дневная тема";
     paragraph.textContent = `
       Дневная тема - это прекрасное время солнца и света.
@@ -42,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("theme", theme);
 
     if (theme === "night-theme") {
-      moon.style.opacity = "1"; // Показываем луну при переключении на темную тему
+      moon.style.display = "block"; // Show the moon icon when switching to the night theme
+      sun.style.display = "none"; // Hide the sun icon when switching to the night theme
       heading.textContent = "Ночная тема";
       paragraph.textContent = `
         Ночная тема - это особенное явление, когда природа облачается в мягкие
@@ -59,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
         лучами.
       `;
     } else {
-      moon.style.opacity = "0"; // Скрываем луну при переключении на светлую тему
+      moon.style.display = "none"; // Show the moon icon when switching to the night theme
+      sun.style.display = "block"; // Hide the sun icon when switching to the night theme
       heading.textContent = "Дневная тема";
       paragraph.textContent = `
         Дневная тема - это прекрасное время солнца и света.

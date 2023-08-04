@@ -1,64 +1,8 @@
+import { DayTheme } from "./components/dayTheme.js";
+import { NightTheme } from "./components/nightTheme.js";
+import { ElementWithToggle } from "./components/elementWithToggle.js";
+
 (function () {
-  // Classes
-  class DayTheme {
-    applyTheme(heading, paragraph, moonIcon, sunIcon) {
-      const navbar = document.querySelector(".navbar");
-      navbar.classList.remove("night-theme");
-      navbar.classList.add("day-theme");
-      document.body.classList.remove("night-theme");
-      if (moonIcon && sunIcon) {
-        moonIcon.hide();
-        sunIcon.show();
-      }
-      heading.textContent = "Дневная тема";
-      if (paragraph) {
-        paragraph.textContent = `
-          Дневная тема - это прекрасное время солнца и света.
-        `;
-      }
-    }
-  }
-
-  class NightTheme {
-    applyTheme(heading, paragraph, moonIcon, sunIcon) {
-      const navbar = document.querySelector(".navbar");
-      navbar.classList.remove("day-theme");
-      navbar.classList.add("night-theme");
-      document.body.classList.add("night-theme");
-      if (moonIcon && sunIcon) {
-        moonIcon.show();
-        sunIcon.hide();
-      }
-      heading.textContent = "Ночная тема";
-      if (paragraph) {
-        paragraph.textContent = `
-          Ночная тема - это особенное явление, когда лунный свет придает ночной теме особый шарм. Полная луна создает
-          романтическую атмосферу и освещает окружающий мир деликатными сияющими
-          лучами.
-        `;
-      }
-    }
-  }
-
-  // Element toggle class
-  class ElementWithToggle {
-    constructor(selector) {
-      this.element = document.querySelector(selector);
-    }
-
-    show() {
-      if (this.element) {
-        this.element.style.display = "block";
-      }
-    }
-
-    hide() {
-      if (this.element) {
-        this.element.style.display = "none";
-      }
-    }
-  }
-
   // Theme text contents
   const nightThemeText = `
     Ночная тема - это особенное явление, когда лунный свет придает ночной теме особый шарм. Полная луна создает романтическую атмосферу и освещает окружающий мир деликатными сияющими

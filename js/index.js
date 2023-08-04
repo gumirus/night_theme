@@ -15,6 +15,7 @@ class DayTheme {
 }
 
 const dayTheme = new DayTheme();
+
 class NightTheme {
   applyTheme() {
     document.body.classList.add("night-theme");
@@ -34,6 +35,7 @@ class NightTheme {
 }
 
 const nightTheme = new NightTheme();
+
 class ElementWithToggle {
   constructor(selector) {
     this.element = document.querySelector(selector);

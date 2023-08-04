@@ -1,6 +1,6 @@
-// import { DayTheme } from "./dayTheme.js";
-// import { NightTheme } from "./nightTheme.js";
-// import { ElementWithToggle } from "./elementWithToggle.js";
+// import { DayTheme } from "/js/dayTheme";
+// import { NightTheme } from "/js/nightTheme";
+// import { ElementWithToggle } from "/js/elementWithToggle";
 
 // const moonIcon = new ElementWithToggle(".moon");
 // const sunIcon = new ElementWithToggle(".sun");

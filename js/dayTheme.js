@@ -1,3 +1,8 @@
+// const moonIcon = new ElementWithToggle(".moon");
+// const sunIcon = new ElementWithToggle(".sun");
+// const heading = document.getElementById("theme-heading");
+// const paragraph = document.getElementById("paragraph");
+
 // class DayTheme {
 //   applyTheme() {
 //     document.body.classList.remove("night-theme");

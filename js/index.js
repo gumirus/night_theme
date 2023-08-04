@@ -1,5 +1,8 @@
 class DayTheme {
   applyTheme() {
+    const navbar = document.querySelector(".navbar"); // Get the "navbar" div
+    navbar.classList.remove("night-theme");
+    navbar.classList.add("day-theme");
     document.body.classList.remove("night-theme");
     if (moonIcon && sunIcon) {
       moonIcon.hide();
@@ -18,6 +21,9 @@ const dayTheme = new DayTheme();
 
 class NightTheme {
   applyTheme() {
+    const navbar = document.querySelector(".navbar"); // Get the "navbar" div
+    navbar.classList.remove("day-theme");
+    navbar.classList.add("night-theme");
     document.body.classList.add("night-theme");
     if (moonIcon && sunIcon) {
       moonIcon.show();
